@@ -1,38 +1,114 @@
-.App {
+/* header */
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	background-color: #F685F6;
+	color: #1F3A93;
+  font-family: Segoe UI;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-title {
+	font-size: 50px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-subtitle {
+	font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* labtest create */
+
+.labexam-body {
+	display: flex;
+	flex-direction: column;
+	padding-top: 75px;
 }
 
-.App-link {
-  color: #61dafb;
+.labexam-create {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.labexam-create_input {
+	display: block;
+	color: #34415E;
+	width: 210px;
+	height: 40px;
+	margin: 0 10px 0 10px;
+	background-color: #FFF1FE;
+	border-radius: 10px;
+	border: none;
+	font-size: 19px;
+	font-family: Segoe UI;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.labexam-create_input:hover,
+.labtest-create_input:active,
+.labtest-create_input:focus {
+	box-shadow: 1px 1px #34415E;
+}
+
+.labexam-create_button {
+	border: none;
+}
+
+
+/* labtest read */
+
+.labexam-read{
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 170px;
+	background-color: #FFF1FE;
+	margin-top: 50px;
+	margin-left: 450px;
+	box-shadow: 1px 1px 1px 1px #34415E;
+}
+
+.labexam-read-content {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	color: #34415E;
+	font-size: 19px;
+	font-family: Segoe UI;
+	margin: auto;
+}
+
+.labexam-read-progress {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+
+	.labexam-body {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 50px;
+	}
+
+	.labexam-create {
+		display: inline-block;
+	}
+
+	.labexam-create_input {
+		margin-top: 30px;
+	}
+
+	.labexam-create_button {
+		margin-top: 30px;
+	}
+
 }
