@@ -1,5 +1,5 @@
 const create = (data) => {
-  return fetch('/.netlify/functions/records-create', {
+  return fetch('/.netlify/records-create', {
     body: JSON.stringify(data),
     method: 'POST'
   }).then(response => {
@@ -8,7 +8,7 @@ const create = (data) => {
 }
 
 const readAll = (data) => {
-  return fetch('/.netlify/functions/records-read-all').then((response) => {
+  return fetch('/.netlify/records-read-all').then((response) => {
     return response.json()
   })
 }
